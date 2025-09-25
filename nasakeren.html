@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeri Astronomi NASA VivianC</title>
+    <link rel="stylesheet" href="nasakerenwow.css">
+</head>
+
+<body>
+    <video autoplay muted loop id="bg-video">
+        <source src="background.mp4" type="video/mp4">
+    </video>
+
+    <header class="top-bar">
+        <h1>Galeri Astronomi <span>NASA</span></h1>
+        
+        <div class="date-picker">
+            <label for="tanggal">Pilih Tanggal :</label>
+            <input type="date" id="tanggal">
+            <button onclick="getAPOD()">Lihat Gambar</button>
+        </div>
+    </header>
+
+    <div id="apod" class="apod">
+        <h2 id="judul"></h2>
+        <p id="tanggalText"></p>
+
+        <div class="content-wrapper">
+
+        </div><div id="gambar" class="gambarvideo"></div>
+            <p id="penjelasan"></p>
+        </div>
+    
+        <p id="copyright"></p>
+
+        </div>
+    </div>
+
+  <script src="nasakerenbgt.js"></script>
+</body>
+
+</html>
